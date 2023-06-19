@@ -1,0 +1,53 @@
+.nameWrapper{
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.bodyWrapper {
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.greetingWrapper {
+    font-size: 100px;
+    color: #fffdc7;
+    font-family: "Arial Black", serif
+}
+
+.boldName {
+    background-color: var(--primaryColour);
+    font-size: 100px;
+    border-radius: 20px;
+    padding: 4px;
+}
+
+.title {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-size: 30px;
+}
+
+.introWrapper {
+    flex:50%;
+    width: 100%;
+    height: 100%;
+    max-width: var(calc(--maxWidth / 2));
+    min-width: var(calc(--minWidth / 2));
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+@media only screen and (max-width: 768px) {
+    .introWrapper {
+        flex:100%;
+        min-width: 20px;
+        padding: 20px;
+    }
+    .greetingWrapper {
+        font-size: 70px;
+    }
+    .boldName {
+        font-size: 70px;
+    }
+}

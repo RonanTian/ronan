@@ -1,0 +1,75 @@
+.appWrapper {
+    background-color: var(--backgroundColour);
+    overflow-x: hidden;
+}
+
+.helloWrapper {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: var(--maxWidth);
+    height: 100vh;
+    max-height: var(--maxHeight);
+    min-height: var(--minHeight);
+    margin-left: auto;
+    margin-right: auto;
+    user-select: none;
+    background-image: url("../Information/images/back.jpg");
+    background-color: var(--backgroundColour);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.componentWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: var(--maxWidth);
+    height: 100%;
+    min-height: var(--minHeight);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sectionHeader {
+    width: 100%;
+    font-size: var(--headerFontSize);
+    text-align: center;
+    color: var(--normalFontColor);
+    font-family: "Arial Black", serif;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: var(--normalFontColor);
+    color: var(--backgroundColour);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 101%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+@media only screen and (max-width: 768px) {
+    .componentWrapper {
+        display: flex;
+        flex-wrap: wrap;
+        max-height: none;
+    }
+
+    .helloWrapper {
+        height: 100%;
+    }
+
+    .sectionHeader {
+        font-size: var(--headerMobileFontSize);
+    }
+}
+

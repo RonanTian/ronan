@@ -1,0 +1,25 @@
+.search {
+    border-radius: 10px;
+    padding: 5px;
+    max-width: 200px;
+    width: 100%;
+}
+
+.searchIcon {
+    position: absolute;
+    font-size: 20px;
+    right: 5px;
+}
+
+.searchIcon:hover {
+    cursor: pointer;
+}
+
+.searchWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    width: 200px;
+}

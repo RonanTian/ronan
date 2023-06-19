@@ -1,0 +1,15 @@
+.certsListWrapper {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 768px) {
+    .certsListWrapper {
+        padding: 30px;
+    }
+}

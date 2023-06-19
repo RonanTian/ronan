@@ -1,0 +1,18 @@
+:root {
+    --primaryColour: #98c6fa;
+    --backgroundColour: #fffdc7;
+    --maxWidth: 1900px;
+    --minWidth: 768px;
+    --maxHeight: 1200px;
+    --minHeight: 500px;
+    --headerFontSize: 60px;
+    --headerMobileFontSize: 40px;
+    --greyAccent : #c7d0d8;
+    --normalFontColor: #000000;
+    --scrollBarColour: orange;
+    /*access using var(--name)*/
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
